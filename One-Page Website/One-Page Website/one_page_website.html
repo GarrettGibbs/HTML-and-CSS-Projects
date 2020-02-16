@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Penguin Productions </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+	</head>
+	<body>
+		<!-- NAV -->
+			<a href="#home" id="link"><li>HOME</li></a>
+			<a href="#gallery" id="link"><li>GALLERY</li></a>
+			<a href="#video" id="link"><li>VIDEOS</li></a>
+			<a href="#contact" id="link"><li>CONTACT US</li></a>
+		<!--END NAV-->
+		
+		<!--HOME-->
+		<div id="home">
+			<img src="./images/Penguin_logo.jpg" class="hover-shadow" alt="penguin productions logo">
+			<p>Why Penguin?:<br>
+			Penguins serve not only as our mascot, but also as our inspiration.<br> 
+			They are stoic and endlessly hardworking, putting everything they have into the teamwork and community they are a part of. <br>
+			At the same time, they are absurd and ridiculous, waddling with the best of them. <br>
+			We strive to embody both sides of the penguin, hardworking and fun-loving!
+			About the Company:<br>
+			Penguin Productions is a theatre company located just outside of Newberg, Oregon.<br>
+			Our mission is to entertain and inspire our community by creating theater for a contemporary world.<br>
+			To that end, we are dedicated to creating a diverse ensemble of artists and technicians for each season. <br>
+			Currently operating on a outdoor stage nestled in a field of hazelnut trees, Penguin Productions offers professional-quality shows in the heart of scenic wine country.</p> 
+		</div>
+		<!--END HOME-->
+		
+		<!--GALLERY-->
+			<div id="gallery">
+				<h1>Gallery</h1>
+				<div class="row">
+					<div class="column">
+						<img src="./images/A_doll's_house.jpg" onclick="openModal();currentSlide1()" class="hover-shadow" alt="a doll's house">
+					</div>
+					<div class="column">
+						<img src="./images/The_Oz_Chronicles_2.jpg" onclick="openModal();currentSlide1()" class="hover-shadow" alt="the oz chronicles">
+					</div>
+					<div class="column">
+						<img src="./images/The_Importance_of_Being_Earnest.jpg" onclick="openModal();currentSlide1()" class="hover-shadow" alt="the importance of being earnest">
+					</div>
+					<div class="column">
+						<img src="./images/The_Misanthrope.jpg" onclick="openModal();currentSlide1()" class="hover-shadow" alt="the misanthrope">
+					</div>
+				</div>
+			</div>
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+			  
+				  <div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="./images/A_doll's_house.jpg" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./images/The_Oz_Chronicles_2.jpg" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./images/The_Importance_of_Being_Earnest.jpg" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./images/The_Misanthrope.jpg" style="width:100%">
+				  </div>
+			  
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				  <div class="caption-container">
+					<p id="caption"></p>
+				  </div>
+			
+				  <div class="column">
+					<img class="demo" src="./images/A_doll's_house.jpg" onclick="currentSlide(1)" alt="a doll's house">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="./images/The_Oz_Chronicles_2.jpg" onclick="currentSlide(2)" alt="the oz chronicles">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="./images/The_Importance_of_Being_Earnest.jpg" onclick="currentSlide(3)" alt="the importance of being earnest">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="./images/The_Misanthrope.jpg" onclick="currentSlide(4)" alt="the misanthrope">
+				  </div>
+				</div>
+			  </div>
+		<!--END GALLERY-->
+		
+		<!--VIDEOS-->
+			<div id="video">
+				<h1>VIDEO</h1>
+				<iframe width="420" height="315"
+				src="https://www.youtube.com/embed/O8qilxaBR20"></iframe>
+			</div>
+		<!--END VIDEOS-->
+		
+		<!--RSVP-->
+		<Section>
+			<div id="contact">
+					<h1>Sign Up for our E-Newsletter!</h1>
+						<h2>Keep up to date on all the Penguin news!</h2>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input type="submit" value="Submit">
+							</form>
+			</div>
+		</section>
+		<!--END RSVP-->
+		
+		<!--FOOTER-->
+		<div>
+			www.penguinsonstage.org &nbsp;|&nbsp; &copy;2020
+		</div>
+		<!--END FOOTER-->						
+	<script src="./JS/one_page_website.js"></script>
+	</body>
+</html>
