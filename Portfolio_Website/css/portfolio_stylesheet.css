@@ -18,7 +18,7 @@ body.fade-out {
 /*navbar*/
 .Navbar {
     overflow: hidden; 
-	background-color: purple; 
+	background-color: rgb(70, 0, 70); 
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
@@ -28,7 +28,7 @@ body.fade-out {
 }
 
 .Navbar a {
-    color: #fff;
+    color: white;
 	float: left; 
 	display: block; 
 	padding: .75vw 1vw; 
@@ -58,8 +58,8 @@ body.fade-out {
 }
 
 .Navbar a:hover {
-	background-color: #fff;
-	color: purple; 
+	background-color: #f4f4f4;
+	color: rgb(70, 0, 70); 
 	font-weight: bold; 
 	cursor: pointer;
 	-webkit-transition-duration: 1s;
@@ -67,7 +67,13 @@ body.fade-out {
 }
 
 .Navbar a.active { 
-    background-color: darkblue;  
+	background-color: #4d4d4d;
+	color: rgb(70, 0, 70);  
+}
+
+.Navbar a.active:hover { 
+	background-color: black;
+	color: white;  
 }
 
 @keyframes zoominoutsinglefeatured {
@@ -87,7 +93,7 @@ body.fade-out {
 }
 
 .Video_Text { 
-	background: rgba(133, 14, 103, 0.2); 
+	background: rgba(255, 255, 255, 0.35); 
 	color: white; 
 	width: 100%;
 	padding-top: 1vh;
@@ -99,7 +105,7 @@ body.fade-out {
 }
 
 #Slideshow_Background {
-	background: rgba(255, 255, 255, 0.35)
+	background: rgba(255, 255, 255, 0.35);
 }
 
 .mySlides {
@@ -215,7 +221,7 @@ body.fade-out {
 	float: left;  
 	width: 50%; 
 	padding: 1.6%;  
-	height: 400px; 
+	height: 448px; 
 	background-color: #f2f2f2; 
 }
 
@@ -223,8 +229,8 @@ body.fade-out {
 	float: left;
 	width: 50%;
 	padding: 1.6%;
-	height: 400px;
-	background-color: darkgray;
+	height: 448px;
+	background-color: #4d4d4d;
 }
 
 .Row:after { 
@@ -275,7 +281,7 @@ q { /*quote*/
 }
 
 img { /*all images*/
-	filter: grayscale(75%); 
+	filter: grayscale(50%); 
     border-radius: 8px;
     max-width: 100%; 
     height: 100%; 
@@ -302,7 +308,7 @@ h1:hover { /* hover for h1 elements */
 img:hover { /* hover for image elements */
 	filter: grayscale(5%);  
     transition: transform 1s;
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 @keyframes movePopup {
@@ -315,7 +321,7 @@ img:hover { /* hover for image elements */
 	bottom: 1.75vw;
 	right: 1.75vw;
 	width: 25vw;  
-	background-color: white;
+	background-color: rgb(70, 0, 70);
 	color: black;
 	border: solid;
 	cursor: pointer;
@@ -325,7 +331,7 @@ img:hover { /* hover for image elements */
 }
 
 .form-popup {
-	border: 3px solid #f0f1f0;
+	border: 3px solid rgb(70, 0, 70);
 	z-index: 8;
 	display: none;
 	position: fixed;
@@ -376,7 +382,7 @@ button {
 
 button:hover, .form-container .btn:hover{
 	color: white;
-	background-color: black;
+	background-color: rgb(70, 0, 70);
 	-webkit-transition-duration: 1s; 
 	transition-duration: 1s;
 	border-style: solid;
