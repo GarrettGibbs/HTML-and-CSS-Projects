@@ -1,2 +1,2 @@
 # HTML-and-CSS-Projects
-Course work for the HTML and CSS Course
+This repository contains projects that I undertook during the HTML and CSS course as well as practice assignments to further hone specific skills. 
